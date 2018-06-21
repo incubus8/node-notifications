@@ -1,6 +1,4 @@
-# node-notifications [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](http://www.free-online-calculator-use.com/yield-to-maturity-calculator.html)[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
-
-Complete microservice for smsgw, 100% revamp from ROR.
+# node-notification [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](http://www.free-online-calculator-use.com/yield-to-maturity-calculator.html)[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 
 ## Using the Microservice
 
@@ -52,7 +50,7 @@ $ npm start
 The following environment variables are needed:
 ```shell
 $ NEW_RELIC_LICENSE_KEY=xxxxxxxx
-$ NEW_RELIC_APP_NAME=microservice-smsgw
+$ NEW_RELIC_APP_NAME=ms-notification
 $ NEW_RELIC_LABELS=Environment:Local
 $ NEW_RELIC_HOME=newrelic.js
 ```

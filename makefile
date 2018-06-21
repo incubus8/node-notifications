@@ -3,7 +3,7 @@ GIT_SHORT_SHA := $(shell git log -1 --format="%h")
 
 # The image name is the name of the folder, e.g: ms-cards, ms-file-upload etc.
 IMAGE_NAMESPACE = incubus8
-IMAGE_NAME := ms-notifications
+IMAGE_NAME := ms-notification
 
 # By default, we'll push the image as 'latest'. Override this env var if you
 # want to 'make push' with a tag, semver or whatever.

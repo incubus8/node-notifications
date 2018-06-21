@@ -61,9 +61,6 @@ exports.up = (knex, Promise) => {
       table.string('sms_content_hash').notNullable();
       table.string('job_status').notNullable();
 
-      // Used only for backward compability from smsgw-1.
-      table.string('queue_name');
-
       table.text('response_data', 'longtext');
       table.string('response_status');
       table.string('real_response_time'); // Deprecated

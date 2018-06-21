@@ -6,7 +6,7 @@ services:
       args:
         - NODE_ENV=production
         - POSTGRES_URL=postgres://postgres@db:5432/dev
-        - SERVICE_NAME=ms-smsgw
+        - SERVICE_NAME=ms-notification
         - NPM_REGISTRY
         - NPM_TOKEN
         - HTTP_PROXY
