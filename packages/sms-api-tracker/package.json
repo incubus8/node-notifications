@@ -1,0 +1,14 @@
+{
+  "name": "@incubus8/sms-api-tracker",
+  "private": true,
+  "author": "Rheza Satria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@incubus8/sms-core": "file:../sms-core"
+  }
+}

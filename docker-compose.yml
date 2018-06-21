@@ -1,0 +1,49 @@
+version: '2'
+services:
+  ms-smsgw:
+    build:
+      context: .
+      args:
+        - NODE_ENV=production
+        - POSTGRES_URL=postgres://postgres@db:5432/dev
+        - SERVICE_NAME=ms-smsgw
+        - NPM_REGISTRY
+        - NPM_TOKEN
+        - HTTP_PROXY
+        - HTTPS_PROXY
+    environment:
+      - SERVICE_PORT=3000
+      - WAIT_START=1
+      - KNEX_DEBUG=true
+      - NODE_DEBUG=true
+      - NEXMO_API_KEY=1fab22df
+      - NEXMO_API_SECRET=383de9b2a2dcd72a
+    ports:
+      - 3000:3000
+    depends_on:
+      - db
+      - redis
+    command: knex migrate:latest
+  db:
+    image: postgres:10.6-alpine
+    # read_only: true
+    tmpfs:
+      - /tmp
+      - /var/run/postgresql
+    volumes:
+      - db:/var/lib/postgresql/data
+      - ./postgres-initdb.sh:/docker-entrypoint-initdb.d/initdb.sh
+    ports:
+      - "127.0.0.1:5432:5432" # you can override it via docker-compose.override.yml
+
+  # Distributed in-memory cache
+  redis:
+    image: redis:4.0.6-alpine
+    # read_only: true
+    volumes:
+      - redis:/data
+    user: redis
+
+volumes:
+  db:
+  redis:

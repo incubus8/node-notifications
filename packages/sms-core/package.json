@@ -1,0 +1,13 @@
+{
+  "name": "@incubus8/sms-core",
+  "private": true,
+  "author": "Rheza Satria",
+  "version": "1.0.0",
+  "description": "SMS Gateway Core",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "knex migrate:latest",
+    "seed": "knex seed:run",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

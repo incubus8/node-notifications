@@ -1,0 +1,22 @@
+{
+  "name": "@incubus8/sms-api",
+  "private": true,
+  "author": "Rheza Satria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "fastify --port ${SERVICE_PORT?=3000} --log-level debug index.js ",
+    "test": "mocha test/*.test.js"
+  },
+  "dependencies": {
+    "@incubus8/sms-api-category": "file:../sms-api-category",
+    "@incubus8/sms-api-preset": "file:../sms-api-preset",
+    "@incubus8/sms-api-sender": "file:../sms-api-sender",
+    "@incubus8/sms-api-tracker": "file:../sms-api-tracker",
+    "cors": "^2.8.4",
+    "fastify-cli": "^0.12.0",
+    "fastify-helmet": "^1.0.2",
+    "newrelic": "^2.5.0"
+  }
+}

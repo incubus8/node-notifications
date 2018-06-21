@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "description": "Modular Central Notification for The Enterprise",
+  "scripts": {
+    "lint:fix": "eslint . --fix",
+    "test": "mocha test/*.test.js"
+  },
+  "author": "Rheza Satria",
+  "devDependencies": {
+    "eslint": "^4.13.0",
+    "eslint-config-xo-space": "^0.17.0",
+    "lerna": "^2.5.1",
+    "mocha": "^4.0.1",
+    "nock": "^9.1.0"
+  },
+  "dependencies": {
+    "boom": "^7.1.1",
+    "bull": "^3.3.7",
+    "fast-safe-stringify": "^1.2.1",
+    "fast-xml-parser": "^2.8.2",
+    "fastify": "^0.38.0",
+    "fastify-accepts": "^0.4.0",
+    "fastify-env": "^0.2.0",
+    "fastify-helmet": "^1.0.2",
+    "fastify-plugin": "^0.2.1",
+    "fastify-swagger": "^0.2.0",
+    "fastseries": "^1.7.2",
+    "knex": "^0.14.2",
+    "pg": "^7.4.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "string-template": "^1.0.0",
+    "xml2json": "^0.11.0"
+  }
+}

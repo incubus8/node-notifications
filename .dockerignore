@@ -1,0 +1,6 @@
+**
+!packages
+!*.json
+!config
+!makefile
+!postgres-initdb.sh

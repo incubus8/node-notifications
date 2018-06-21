@@ -1,0 +1,14 @@
+{
+  "name": "@incubus8/sms-api-preset",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rheza Satria",
+  "dependencies": {
+    "@incubus8/sms-core": "file:../sms-core"
+  }
+}
