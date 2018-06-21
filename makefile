@@ -1,7 +1,6 @@
 DOCKER_REGISTRY ?= registry.hub.docker.io
 GIT_SHORT_SHA := $(shell git log -1 --format="%h")
 
-# The image name is the name of the folder, e.g: ms-cards, ms-file-upload etc.
 IMAGE_NAMESPACE = incubus8
 IMAGE_NAME := ms-notification
 
