@@ -19,7 +19,6 @@ clean:
 	rm -fr ./packages/sms-api-tracker/node_modules
 	rm -fr ./packages/sms-api/node_modules
 
-# Run local tests, with coverage.
 install:
 	npm config set strict-ssl false
 	npm install --registry https://$(NPM_REGISTRY)

@@ -15,8 +15,8 @@
     "@incubus8/sms-api-sender": "file:../sms-api-sender",
     "@incubus8/sms-api-tracker": "file:../sms-api-tracker",
     "cors": "^2.8.4",
-    "fastify-cli": "^0.12.0",
+    "fastify-cli": "^0.16.3",
     "fastify-helmet": "^1.0.2",
-    "newrelic": "^2.5.0"
+    "newrelic": "^4.2.0"
   }
 }
